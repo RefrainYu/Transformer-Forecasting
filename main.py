@@ -267,10 +267,10 @@ if __name__ == '__main__':
     setting = 'predict-{}-data-{}'.format(args.model, args.data_path[:-4])
 
     SCI = Transformerinitialization(args)  # 实例化模型
-    # if args.train:
-    #     print('>>>>>>>start training : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(args.model))
-    #     SCI.train(setting)
-    # print('>>>>>>>predicting : {}<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'.format(args.model))
+    if args.train:
+        print('>>>>>>>start training : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(args.model))
+        SCI.train(setting)
+    print('>>>>>>>predicting : {}<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'.format(args.model))
     SCI.predict(setting, True)
 
     plt.show()

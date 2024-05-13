@@ -40,4 +40,4 @@ def preprocess(file_path_name, output_path_name):
     print("数据已成功保存到:", output_path)
 
 if __name__ == '__main__':
-    preprocess('data/1A-Trina-To-Predict-2.csv', 'data/1A-Trina-To-Predict-2.csv')
+    preprocess('../data/1A-Real-Trina.csv', '../data/1A-Real-Trina-new.csv')
